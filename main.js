@@ -12,5 +12,9 @@ app.get('/home',(req,res,next)=>{
     next()
 })
 
-
+app.get('/signup',(req,res,next)=>{
+    // const logo="public/images/img1.png";
+    res.render('signUP.ejs',{url:req.protocol+"://"+req.headers.host})
+    next()
+})
 module.exports=app; 
