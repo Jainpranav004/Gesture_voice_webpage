@@ -59,18 +59,18 @@
    </head>
    <body class="m-0 p-0">
      <!-- w-5/6 -->
-     <header class="flex justify-between px-10 py-5  mx-auto">
-       <div class="flex justify-between space-x-20 w-800px">
-         <img class="w-[200px] h-[200px]  br" src="./images/img1.png" alt="logo">
-         <img class="w-[118px] h-[98px] my-auto" src="./images/hand_1.jpeg" alt="">
-         <img class="w-[87px] h-[148px] my-auto" src="./images/hand_2.jpeg" alt="">
-         <!-- <h1>Gesture VOice</h1> -->
+     <header class="  flex justify-around lg:justify-evenly py-5  mx-auto">
+       <div class="bo flex justify-between space-x-0 xl:space-x-20 md:space-x-10 w-auto">
+         <img class=" w-[120px] h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  br" src="./images/img1.png" alt="logo">
+         <img class=" w-[98px] h-[78px] lg:w-[118px] lg:h-[98px] my-auto hidden lg:block" src="./images/hand_1.jpeg" alt="">
+         <img class=" w-[87px] h-[148px] my-auto hidden lg:block" src="./images/hand_2.jpeg" alt="">
+         
          </div>
-         <div class="relative items-start">
-         <nav class=" w-[500px] mx-auto text-xl my-auto">
-           <ul class=" flex justify-around space-x-5 font-bold font-mono p-2">
-             <li class="my-auto colr cursor-pointer hover:text-teal-400"><a href="#">About Us</a></li>
-             <li class="my-auto colr cursor-pointer hover:text-teal-400"><a href="#"">Help</a></li>
+         <div class=" w-[70%] sm:w-[70%] lg:w-[50%] 2xl:w-[60%] relative items-start">
+         <nav class="  absolute right-0 md:static mr-0 w-[40%] md:w-[500px] mx-auto text-xl my-auto bg-gray-200 shadow-xl rounded-lg md:shadow-none md:bg-white md:rounded-none hidden md:block">
+           <ul class="  space-y-3 md:space-y-0 md:flex md:flex-row md:flex-wrap justify-between lg:justify-around  lg:space-x-2 xl:space-x-5 space-x-0 font-bold font-mono p-2">
+             <li class="my-auto colr cursor-pointer hover:text-teal-400"><a class="hover:text-teal-400" href="#">About Us</a></li>
+             <li class="my-auto colr cursor-pointer hover:text-teal-400 content-center"><a href="#">Help</a></li>
              <ul class="cursor-pointer  flex justify-between bg-green w-[175px] px-4 py-2  rounded-full text-gray-200 bgc underline hover:bg-teal-600">
              <li class="cursor-pointer"><a href="#"">Login</a></li>
              <li>|</li>
@@ -78,83 +78,89 @@
            </ul>
            </ul>
          </nav>
-     <div class="font-bold text-4xl w-[450px] mx-auto text-center wrc text-wrap  relative top-12">"Where Gestures Speak and Voices connect"</div>
+                 <!-- //hamburger -->
+                 <div id="hambg">
+                   <img src="./images/hamburger.png"  class="hover:bg-gray-200 rounded-lg cursor-pointer h-12 block md:hidden absolute top-4 right-6" alt="">
+                 </div>
+     <div class="font-bold xl:text-4xl w-[450px] mx-auto text-center wrc text-wrap  relative top-8 left-[4%] lg:left-[5%] xl:left-[25%] lg:top-12 text-3xl invisible md:visible">
+       "Where Gestures Speak and Voices connect"
+     </div>
      </div>
    </header>
    <!-- search bar -->
     <form action="" method="POST">
-     <div class="border border-black w-[89%] flex h-[70px] mx-auto my-10 py-2 justify-center rounded-full space-x-2 shadow-xl focus:border-col">
+     <div class=" w-[89%] flex h-[70px] mx-auto my-2 md:my-10 py-2 px-2 justify-center rounded-full space-x-2 shadow-xl focus:border-col">
        <div class="   flex items-center justify-center">
          <img  src="./images/search.png" class="w-8 h-8 custom-filter" alt="">
        </div>
-       <input class=" w-[85%] text-2xl focus:outline-none " type="search" placeholder="search..">
+       <input class=" w-[86%] text-2xl focus:outline-none " type="search" placeholder="search..">
        <button type="submit" class="text-xl text-gray-200 bgc w-40 rounded-full cursor-pointer hover:bg-teal-600">search</button>
      </div>
     </form>
    
    
    <hr class="mt-10">
-   <div class="flex py-10">
-     <section class=" flex flex-col items-end justify-evenly w-[50%] ">
-       <div class="text-6xl wrc font-semibold w-[85%] text-center leading-normal mb-20">
+   <div class="py-10">
+     <section class="  flex flex-wrap justify-center h-auto mb-5 md:mb-10 lg:mb-5">
+       <div class=" mt-10 md:mt-20 text-4xl lg:text-6xl wrc font-semibold space-y-5 w-[75%] md:w-[42%] h-[200px] md:h-[250px]   text-center lg:text-start leading-normal mb-0 md:mb-20 mx-auto">
          "Unlock the power of silent communication. Learn, gesture, and connect with confidence."
        </div>
-       <div class=" cr shadow-xl p-6 w-96 mx-auto mt-10">
-         <a href="#" class="text-2xl font-bold text-teal-500 mb-4 underline">Sign-to-Speech</a>
-         <img src="./images/card2.png" alt="Sign-to-Speech Illustration" class="mx-auto mb-5 mt-5 w-90 h-90">
-         <p class="text-gray-700 mb-4">Convert hand signs into text or spoken words instantly. This tool bridges the gap between sign language users and those who communicate through voice or text.</p>
-         <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded inline-flex items-center">
-         Learn more
-         </a>
-     </div>
-     </section>
-    <section class=" flex flex-col items-start justify-evenly w-[50%] ">
-     <div class="bg-white cr card p-4 max-w-sm mx-auto">
+       <div class=" bg-white cr card p-4 max-w-sm mx-auto mt-10 ">
          <a href="#" class="text-2xl font-bold text-teal-500 underline">Hand Sign Language Tutorial</a>
          <img src="./images/card1.jpeg" class="w-full h-48 rounded-md object-cover mt-5 mb-5" alt="">
          
          <p class="text-gray-700 mb-4">Learn the basics of Indian Sign Language (ISL) through easy-to-follow tutorials. Master essential gestures and communicate effectively using visual language</p>
          <a href="#" class="inline-flex items-center px-4 py-2 bg-teal-500 text-white font-medium rounded-md hover:bg-teal-600 focus:outline-none focus:ring-2 focus:ring-teal-200">Learn more</a>
      </div>
-     <div class="text-6xl text-center leading-normal font-semibold colr w-[75%]">
-       "Where every gesture finds its voice"
-     </div>
-    </section>
+     </section>
+   
+     <section class=" flex flex-wrap-reverse justify-evenly h-auto">
+       <div class=" cr shadow-xl p-6 max-w-sm mx-auto h-auto">
+         <a href="#" class="text-2xl font-bold text-teal-500 mb-4 underline ">Sign-to-Speech</a>
+         <img src="./images/card2.png" alt="Sign-to-Speech Illustration" class="mx-auto mb-5 mt-5 w-90 h-90 object-cover">
+         <p class="text-gray-700 mb-4">Convert hand signs into text or spoken words instantly. This tool bridges the gap between sign language users and those who communicate through voice or text.</p>
+         <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded inline-flex items-center">
+         Learn more
+         </a></div>
+   
+       <div class=" mt-20 md:mt-60  text-5xl lg:text-6xl colr font-semibold w-[70%] md:w-[42%] h-[170px] md:h-[250px]  text-center lg:text-end leading-normal mb-20 mx-auto">
+         "Where every gesture finds its voice."
+       </div>
+     </section>
    </div>
    
    
-   
-   <section class="mt-10 text-center">
+   <section class=" mt-20 text-center">
      <img class="w-[80%] h-[563px] mx-auto object-cover" src="./images/big.png" alt="">
-     <h2 class="font-bold wrc text-7xl mt-20">"Bridging the Communication Gap"</h2>
+     <h2 class="font-bold wrc text-4xl md:text-5xl  mt-20 lg:text-7xl">"Bridging the Communication Gap"</h2>
    </section>
    
    
    
    
-   <section class="mt-20 bgc w-full h-[300px] flex flex-wrap pt-4">
-       <div class=" basis-1/4 flex flex-col items-center">
-         <div class="w-[56%] text-start"><h2 class="font-bold text-white text-xl">CONTACT US :</h2></div>
+   <section class=" mt-20 bgc  h-[300px] flex flex-wrap justify-center pt-4">
+       <div class="  md:basis-1/4 flex flex-col items-center space-y-3">
+         <h2 class="font-bold text-white text-lg sm:text-xl mr-[25%]">CONTACT US :</h2>
          <div class="flex">
-           <ul class="list none space-y-3 h-[150px] mt-5">
-             <li><img class="w-10 h-10" src="./images/fb.png" alt=""></li>
-             <li><img class="w-10 h-10" src="./images/insta.png" alt=""></li>
-             <li><img class="w-10 h-10" src="./images/linkedin.png" alt=""></li>
+           <ul class="list none space-y-3 h-[150px]  mt-3 lg:mt-5">
+             <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/fb.png" alt=""></li>
+             <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/insta.png" alt=""></li>
+             <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/linkedin.png" alt=""></li>
            </ul>
-         <img class="w-[200px] h-[200px]  br" src="./images/img1.png" alt="logo">
+         <img class=" w-[120px] h-[120px] sm:w-[150px] sm:h-[150px]  lg:w-[200px] lg:h-[200px]  br" src="./images/img1.png" alt="logo">
        </div>
        </div>
-       <div class=" basis-1/2 flex flex-col items-start justify-center space-y-5 text-xl text-gray-200 font-normal mb-10">
+       <div class="  basis-1/3 md:basis-1/2 flex flex-col items-center md:items-start justify-center space-y-5 text-lg sm:text-xl text-gray-200 font-normal mb-10">
          <p>Address - XJkfw3425#%r</p>
          <p>Telephone - 987568568</p>
          <p>Email - ISLT@gmail.com</p>
        </div>
-       <div class=" basis-1/4">
+       <div class=" basis-1/3 md:basis-1/4">
          <form class="space-y-5" action="" method="post">
-         <h2 class="font-bold text-white text-xl">FEEDBACK :</h2>
+         <h2 class="font-bold text-white text-lg sm:text-xl">FEEDBACK :</h2>
          <input class="rounded-lg block p-2 w-[70%]" type="email"  placeholder="Email">
            <textarea rows=4 class="w-[70%] resize-none rounded-lg px-2 border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50" placeholder="Review"></textarea>
-           <div class="flex items-center">
+           <div class="flex items-cente">
                <button type="submit" class="bg-yellow-600 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                    Submit
                </button>
@@ -162,5 +168,8 @@
          </form>
        </div>
    </section>
+   
+   
+   <script src="./script.js"></script>
    </body>
    </html>
