@@ -41,28 +41,34 @@
       @apply border-radius;
       border-radius: 8%;
     }
-    /* .br1{
+     .br1{
       @apply border-radius;
       border-radius: 10%;
-    } */
-    
+    } 
+    .br2{
+        @apply border-radius;
+        border-radius: 3%;
+    }
+    @media screen {
+        
+    }
    </style>
     <title>Gesture Voices</title>
 </head>
 <body class="colr">
     <div class=" text-white text-end fm underline font-bold text-4xl text-end colr pt-4 pr-20 hover:text-gray-200 cursor-pointer mb-[2rem]"><a href="/home">HOME</a></div>
-    <section class="border-2 border-white br w-[70%] mx-auto h-[800px] flex justify-center py-10 relative">
-      <img src="./images/img1.png" class="absolute w-[480px] h-[405px] rounded-full top-[36%] left-[10%]" alt="">
-      <div class=" text-white font-bold text-5xl fri w-[35%] py-10 text-center leading-snug"><p>"Where Gestures Speak and Voices Connect"</p></div>
-      <div class=" justify-center bg-white w-[50%] h-[100%] flex flex-col items-center br">
-        <h1 class="text-3xl font-bold text-gray-800 mb-8">Create Account</h1>
+    <section class="border-2 border-white  br2  w-[70%] mx-auto h-auto flex justify-center py-10 relative flex-wrap px-10">
+      <img src="./images/img1.png" class="absolute w-[150px] h-[150px] 2xl:w-[370px]  2xl:h-[370px]   rounded-full top-[-6%] left-[-10%] 2xl:top-[36%] 2xl:left-[20%]" alt="">
+      <div class=" text-white font-bold text-5xl fri w-[450px] py-10 text-center leading-snug mb-10"><p>"Where Gestures Speak and Voices Connect"</p></div>
+      <div class=" justify-center bg-white w-[600px] h-[100%] flex flex-col items-center br1 lg:br py-20">
+        <h1 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-8">Create Account</h1>
 
-        <div class="flex space-x-4 mb-8">
-            <button class="bg-white hover:bg-gray-100 text-gray-500 font-semibold pop py-2 px-4 rounded-lg border border-gray-500">
+        <div class=" flex space-x-4 mb-0 lg:mb-8 flex-wrap justify-center">
+            <button class="  bg-white mb-8 hover:bg-gray-100 text-gray-500 font-semibold pop py-2 px-4 rounded-lg border border-gray-500">
                 <img src="./images/google.png" class="inline-block w-4 h-4 mr-2" alt="">
-                Sign up with google
+                Sign up with google  
             </button>
-            <button class="bg-white hover:bg-gray-100 text-gray-500 pop font-semibold py-2 px-4 rounded-lg border border-gray-500">
+            <button class="bg-white mb-8 hover:bg-gray-100 text-gray-500 pop font-semibold py-2 px-4 rounded-lg border border-gray-500">
                 <img src="./images/fb.png" class="inline-block w-4 h-4 mr-2" alt="">
                 Sign up with Facebook
             </button>
