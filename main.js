@@ -14,7 +14,7 @@ app.get('/home',(req,res,next)=>{
 
 app.get('/signup',(req,res,next)=>{
     // const logo="public/images/img1.png";
-    res.render('signUp.ejs',{url:req.protocol+"://"+req.headers.host})
+    res.render('SignUP.ejs',{url:req.protocol+"://"+req.headers.host})
     next()
 })
 app.get('/aboutus',(req,res,next)=>{
