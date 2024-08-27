@@ -38,12 +38,12 @@ app.get('/help',(req,res,next)=>{
 })
 app.get('/translation',(req,res,next)=>{
     // const logo="public/images/img1.png";
-    res.render('Translation.ejs',{url:req.protocol+"://"+req.headers.host})
-    next()
-})
-app.get('/tutorials',(req,res,next)=>{
-    // const logo="public/images/img1.png";
     res.render('SignToText.ejs',{url:req.protocol+"://"+req.headers.host})
     next()
 })
+// app.get('/tutorials',(req,res,next)=>{
+//     // const logo="public/images/img1.png";
+//     res.render('SignToText.ejs',{url:req.protocol+"://"+req.headers.host})
+//     next()
+// })
 module.exports=app; 
