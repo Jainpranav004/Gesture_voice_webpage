@@ -17,6 +17,11 @@
          box-sizing: border-box;
          /* padding: 0; */
        }
+       .bg-col{
+        @apply background-color;
+        background-color: #194147;
+       }
+
        .card {
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -25,6 +30,11 @@
                @apply filter;
                filter: invert(48%) sepia(51%) saturate(604%) hue-rotate(125deg) brightness(93%) contrast(96%);
            }
+           .filter{
+            @apply filter;
+            filter:invert(1);
+           }
+
            .border-col{
              @apply border;
              border:2px solid #008080;
@@ -58,22 +68,27 @@
              color:#008080;
              font-size: 20px;
            }
+
+           .search-b{
+            @apply border;
+            border: 1px solid #194147;
+           }
       </style>
    </head>
    <body class="m-0 p-0">
      <!-- w-5/6 -->
-     <header class="  flex justify-around lg:justify-evenly py-5  mx-auto">
+     <header class="  flex justify-around lg:justify-evenly py-5  mx-auto bg-col">
         <div class="bo flex justify-between space-x-0 xl:space-x-20 md:space-x-10 w-auto">
             <img class=" w-[120px] h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  rounded-full" src="./images/img1.png" alt="logo">
         </div>
          
-            <img class=" w-[98px] h-[78px] lg:w-[118px] lg:h-[98px] my-auto hidden lg:block" src="./images/hand_1.jpeg" alt="">
-            <img class=" w-[87px] h-[148px] my-auto hidden lg:block" src="./images/hand_2.jpeg" alt="">
+            <img class=" w-[98px] h-[78px] lg:w-[118px] lg:h-[98px] my-auto hidden lg:block filter" src="./images/hand_1-c.png" alt="">
+            <img class=" w-[87px] h-[148px] my-auto hidden lg:block filter" src="./images/hand_2-c.png" alt="">
         
 
          
-         <div class=" w-[70%] sm:w-[70%] lg:w-[50%] 2xl:w-[60%] relative items-start">
-         <nav class="  absolute right-0 md:static mr-0 w-[40%] md:w-[500px] mx-auto text-xl my-auto bg-gray-200 shadow-xl rounded-lg md:shadow-none md:bg-white md:rounded-none hidden md:block">
+         <div class=" bg-col w-[70%] sm:w-[70%] lg:w-[50%] 2xl:w-[60%] relative items-start">
+         <nav class="  absolute right-0 md:static mr-0 w-[40%] md:w-[500px] mx-auto text-xl my-auto bg-col shadow-xl rounded-lg md:shadow-none md:bg-white md:rounded-none hidden md:block">
            <ul class="  space-y-3 md:space-y-0 md:flex md:flex-row md:flex-wrap justify-between lg:justify-around  lg:space-x-2 xl:space-x-5 space-x-0 font-bold font-mono p-2">
              <li class="my-auto colr cursor-pointer hover:text-teal-400"><a class="hover:text-teal-400" href="/AboutUs">About Us</a></li>
              <li class="my-auto colr cursor-pointer hover:text-teal-400 content-center"><a href="/help">Help</a></li>
@@ -95,7 +110,7 @@
    </header>
    <!-- search bar -->
     <form action="" method="POST">
-     <div class=" w-[89%] flex h-[70px] mx-auto my-2 md:my-10 py-2 px-2 justify-center rounded-full space-x-2 shadow-xl focus:border-col">
+     <div class="search-b w-[89%] flex h-[70px] mx-auto my-2 md:my-10 py-2 px-2 justify-center rounded-full  space-x-2 shadow-xl focus:border-col">
        <div class="   flex items-center justify-center">
          <img  src="./images/search.png" class="w-8 h-8 custom-filter" alt="">
        </div>
@@ -106,8 +121,8 @@
    
    
    <hr class="mt-10">
-   <div class="py-10">
-     <section class="  flex flex-wrap justify-center h-auto mb-5 md:mb-10 lg:mb-5">
+   <div class="py-10 bg-col">
+     <section class="flex flex-wrap justify-center h-auto mb-5 md:mb-10 lg:mb-5">
        <div class=" mt-10 md:mt-20 text-4xl lg:text-6xl wrc font-semibold space-y-5 w-[75%] md:w-[42%] h-[200px] md:h-[250px]   text-center lg:text-start leading-normal mb-0 md:mb-20 mx-auto">
          "Unlock the power of silent communication. Learn, gesture, and connect with confidence."
        </div>
@@ -121,7 +136,7 @@
      </section>
    
      <section class=" flex flex-wrap-reverse justify-evenly h-auto">
-       <div class=" cr shadow-xl p-6 max-w-sm mx-auto h-auto">
+       <div class="bg-white cr shadow-xl p-6 max-w-sm mx-auto h-auto">
          <a href="/translation" class="text-2xl font-bold text-teal-500 mb-4 underline ">Sign-to-Speech</a>
          <img src="./images/card2.png" alt="Sign-to-Speech Illustration" class="mx-auto mb-5 mt-5 w-90 h-90 object-cover">
          <p class="text-gray-700 mb-4">Convert hand signs into text or spoken words instantly. This tool bridges the gap between sign language users and those who communicate through voice or text.</p>
@@ -129,7 +144,7 @@
          Learn more
          </a></div>
    
-       <div class=" mt-20 md:mt-60  text-5xl lg:text-6xl colr font-semibold w-[70%] md:w-[42%] h-[170px] md:h-[250px]  text-center lg:text-end leading-normal mb-20 mx-auto">
+       <div class=" mt-20 md:mt-60  text-5xl lg:text-6xl wrc font-semibold w-[70%] md:w-[42%] h-[170px] md:h-[250px]  text-center lg:text-end leading-normal mb-20 mx-auto">
          "Where every gesture finds its voice."
        </div>
      </section>
@@ -138,7 +153,7 @@
    
    <section class=" mt-20 text-center">
      <img class="w-[80%] h-[563px] mx-auto object-cover" src="./images/big.png" alt="">
-     <h2 class="font-bold wrc text-4xl md:text-5xl  mt-20 lg:text-7xl">"Bridging the Communication Gap"</h2>
+     <h2 class="font-bold wrc text-4xl md:text-5xl  mt-20 lg:text-7xl ">"Bridging the Communication Gap"</h2>
    </section>
    
    
