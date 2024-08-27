@@ -1,0 +1,262 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+       <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+   <!-- <link rel="stylesheet" href="<%=url%>/src/output.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+    .colr{
+      @apply background-color;
+      background-color:#008080;
+    }
+</style>
+    <title>Gesture Voices</title>
+</head>
+<body>
+    <div class=" text-white text-end fm  font-bold text-4xl colr pt-4 pr-20 hover:text-gray-200 cursor-pointer mb-[2rem]"><a href="/home">HOME</a></div>
+    <div class="">
+        <img class=" w-[120px] h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  br rounded-full" src="./images/img1.png" alt="logo">
+
+    </div>  
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <script src="https://cdn.tailwindcss.com"></script> 
+   <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="<%=url%>/src/output.css">
+    <title>Hand Sign Language Tutorial</title>
+    <style>
+        .colr{
+      @apply background-color;
+      background-color:#008080;
+    }
+    .bgc{
+             @apply background-color;
+             background-color: #008080;
+           }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            padding: 1rem;
+            text-align: center;
+            height: 200px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .module-grid {
+            
+            gap: 2rem;
+
+            display: flex;
+            flex-wrap: wrap;
+            margin: auto;
+            margin-top: 2rem;
+            /* border: 5px solid black; */
+        }
+
+        .module {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 27rem;    
+            
+        }
+        .module:hover{
+            border: 1px solid black;
+        }
+
+        .module img {
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        .module h3 {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        .module p {
+            line-height: 1.6;
+            font-size: large;
+        }
+
+        footer {
+            background-color: #14a468;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            margin: 0 0.5rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        .social-links i {
+            font-size: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .contact-info img {
+            width: 50px;
+            height: auto;
+            margin-right: 1rem;
+        }
+
+        .feedback-form {
+            margin-top: 2rem;
+        }
+
+        .feedback-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .feedback-form input[type="email"],
+        .feedback-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .feedback-form button[type="submit"] {
+            background-color: #14a468;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       
+    </style>
+</head>
+<body>
+   
+    <div class=" text-white text-end fm underline w-[100%] font-bold text-4xl colr py-2 pt-4 pr-20 hover:text-gray-200 cursor-pointer mb-[2rem]"><a href="/home">HOME</a></div>
+   
+    <header class="flex justify-around bg-[#008080] h-56  ">
+        <div> <img class=" w-[120px]   h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  br rounded-full border-2 border-slate-200" src="./images/img1.png" alt="logo"></div>
+        <div ><h1 class="font-serif pt-14 w-[65rem] ml-[-30]  border-black text-7xl text-white  ">Hand Sign Language Tutorial</h1></div>
+    </header>
+       
+           
+       
+    <div class="container">
+        <div class="module-grid">
+            <div class="module">
+                <img src="./images-2/module-01.jpg" >
+                <h3>Module 1: Basic ISL Gestures</h3>
+                <p>Learn the fundamental signs used in everyday conversations, perfect for beginners starting with Indian Sign Language (ISL). Advanced ISL Phrases</p>
+            </div>
+            <div class="module">
+                <img src="./images-2/module-02.jpg" >
+                <h3>Module 2: Advanced ISL Phrases</h3>
+                <p>Explore more complex phrases and sentences in ISL, including idioms and expressions used in various contexts.</p>
+            </div>
+            <div class="module">
+                <img src="./images-2/module-03.jpg" >
+                <h3>Module 3: ISL Grammar and Structure</h3>
+                <p>Explore more complex phrases and sentences in ISL, including idioms and expressions used in various contexts.</p>
+            </div>
+            <div class="module">
+                <img src="./images-2/module-04.jpg" >
+                <h3>Module 4 :Interactive Sign Language Practice</h3>
+                <p>Engage in interactive exercises to practice your signing skills, with real-time feedback and progress tracking.</p>
+            </div>
+            <div class="module">
+                <img src="./images-2/module-03.jpg" >
+                <h3>Module 5: ISL Fingerspelling and cultural aspects of ISL</h3>
+                <p>Master the alphabet and numbers in ISL through fingerspelling, essential for spelling out names and complex words.</p>
+            </div>
+            <div class="module">
+                <img src="./images-2/module-06.jpg" >
+                <h3>Module 6: Sign Language Games and Challenges</h3>
+                <p>Fun and educational games designed to reinforce learning, challenge your skills, and make mastering ISL enjoyable.</p>
+            </div>
+        </div>
+    </div>
+
+    
+   <section class=" mt-20 bgc  h-[300px] flex flex-wrap justify-center pt-4">
+    <div class="  md:basis-1/4 flex flex-col items-center space-y-3">
+      <h2 class="font-bold text-white text-lg sm:text-xl mr-[25%]">CONTACT US :</h2>
+      <div class="flex">
+        <ul class="list none space-y-3 h-[150px]  mt-3 lg:mt-5">
+          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/fb.png" alt=""></li>
+          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/insta.png" alt=""></li>
+          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/linkedin.png" alt=""></li>
+        </ul>
+      <img class=" w-[120px] h-[120px] sm:w-[150px] sm:h-[150px]  lg:w-[200px] lg:h-[200px]  br" src="./images/img1.png" alt="logo">
+    </div>
+    </div>
+    <div class="  basis-1/3 md:basis-1/2 flex flex-col items-center md:items-start justify-center space-y-5 text-lg sm:text-xl text-gray-200 font-normal mb-10">
+      <p>Address - XJkfw3425#%r</p>
+      <p>Telephone - 987568568</p>
+      <p>Email - ISLT@gmail.com</p>
+    </div>
+    <div class=" basis-1/3 md:basis-1/4">
+      <form class="space-y-5" action="" method="post">
+      <h2 class="font-bold text-white text-lg sm:text-xl">FEEDBACK :</h2>
+      <input class="rounded-lg block p-2 w-[70%]" type="email"  placeholder="Email">
+        <textarea rows=4 class="w-[70%] resize-none rounded-lg px-2 border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50" placeholder="Review"></textarea>
+        <div class="flex items-cente">
+            <button type="submit" class="bg-yellow-600 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Submit
+            </button>
+        </div>
+      </form>
+    </div>
+</section>
+
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
+</body>
+</html>

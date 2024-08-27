@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    font-family: 'Inika',serif;
+    box-sizing: border-box;
+    /* padding: 0; */
+  }
+  .card {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  }
+  .custom-filter {
+          @apply filter;
+          filter: invert(48%) sepia(51%) saturate(604%) hue-rotate(125deg) brightness(93%) contrast(96%);
+      }
+      .border-col{
+        @apply border;
+        border:2px solid #008080;
+      }
+      .colr{
+        @apply color;
+        color:#008080;
+      }
+      .wrc{
+        @apply color;
+        color: #C39B3A;
+
+      }
+      .bgc{
+        @apply background-color;
+        background-color: #008080;
+      }
+      .br{
+        @apply border-radius;
+        border-radius: 40%;
+      }
+      .cr{
+        @apply border-radius;
+        border-radius: 8%;
+      }
+      .mainbody{
+        @apply background-color;
+        background-color:#f6f6f6;
+      }
+      section input::placeholder,section textarea::placeholder{
+        color:#008080;
+        font-size: 20px;
+      }

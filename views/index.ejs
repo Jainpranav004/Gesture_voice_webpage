@@ -14,10 +14,12 @@
        *{
          margin: 0;
          font-family: 'Inika',serif;
+         box-sizing: border-box;
          /* padding: 0; */
        }
        .card {
      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
        }
        .custom-filter {
                @apply filter;
@@ -61,12 +63,15 @@
    <body class="m-0 p-0">
      <!-- w-5/6 -->
      <header class="  flex justify-around lg:justify-evenly py-5  mx-auto">
-       <div class="bo flex justify-between space-x-0 xl:space-x-20 md:space-x-10 w-auto">
-         <img class=" w-[120px] h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  br" src="./images/img1.png" alt="logo">
-         <img class=" w-[98px] h-[78px] lg:w-[118px] lg:h-[98px] my-auto hidden lg:block" src="./images/hand_1.jpeg" alt="">
-         <img class=" w-[87px] h-[148px] my-auto hidden lg:block" src="./images/hand_2.jpeg" alt="">
+        <div class="bo flex justify-between space-x-0 xl:space-x-20 md:space-x-10 w-auto">
+            <img class=" w-[120px] h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  rounded-full" src="./images/img1.png" alt="logo">
+        </div>
          
-         </div>
+            <img class=" w-[98px] h-[78px] lg:w-[118px] lg:h-[98px] my-auto hidden lg:block" src="./images/hand_1.jpeg" alt="">
+            <img class=" w-[87px] h-[148px] my-auto hidden lg:block" src="./images/hand_2.jpeg" alt="">
+        
+
+         
          <div class=" w-[70%] sm:w-[70%] lg:w-[50%] 2xl:w-[60%] relative items-start">
          <nav class="  absolute right-0 md:static mr-0 w-[40%] md:w-[500px] mx-auto text-xl my-auto bg-gray-200 shadow-xl rounded-lg md:shadow-none md:bg-white md:rounded-none hidden md:block">
            <ul class="  space-y-3 md:space-y-0 md:flex md:flex-row md:flex-wrap justify-between lg:justify-around  lg:space-x-2 xl:space-x-5 space-x-0 font-bold font-mono p-2">
@@ -83,7 +88,7 @@
                  <div id="hambg">
                    <img src="./images/hamburger.png"  class="hover:bg-gray-200 rounded-lg cursor-pointer h-12 block md:hidden absolute top-4 right-6" alt="">
                  </div>
-     <div class="font-bold xl:text-4xl w-[450px] mx-auto text-center wrc text-wrap  relative top-8 left-[4%] lg:left-[5%] xl:left-[25%] lg:top-12 text-3xl invisible md:visible">
+     <div class="font-bold xl:text-4xl w-[450px] mx-auto text-center wrc text-wrap  relative top-8 left-[4%] lg:left-[5%] xl:left-[25%] lg:top-12 text-6xl invisible md:visible">
       “Where Gestures Speak and Voices Connect”
      </div>
      </div>
