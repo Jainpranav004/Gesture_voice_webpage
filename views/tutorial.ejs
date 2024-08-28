@@ -56,6 +56,7 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+        
         }
 
         header {
@@ -68,6 +69,7 @@
             max-width: 960px;
             margin: 0 auto;
             padding: 2rem;
+            padding-left: 4.5rem;
         }
 
         h1 {
@@ -91,6 +93,7 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             width: 27rem;    
+            border: 3px solid #194147;
             
         }
         .module:hover{
@@ -179,7 +182,15 @@
 </head>
 <body>
    
-    <div class=" text-white text-end fm underline w-[100%] font-bold text-4xl colr py-2 pt-4 pr-20 hover:text-gray-200 cursor-pointer mb-[2rem]"><a href="/home">HOME</a></div>
+    <div class=" text-[#008080] flex flex-row ml-0 justify-end items-center space-x-10  text-end fm w-[100%] text-2xl  py-2 pt-4 pr-20  cursor-pointer mb-[2rem] font-serif">
+        <div class="underline hover:text-gray-300"> <a href="/home">Blog</a></div>
+        <div class="underline  hover:text-gray-300"> <a href="/home">Contact</a></div>
+       <div class="underline hover:text-gray-300"> <a href="/home">About</a></div>
+       <div class="underline hover:text-gray-300"> <a href="/home">Home</a></div>
+       
+        
+    </div>
+
    
     <header class="flex justify-around bg-[#008080] h-56  ">
         <div> <img class=" w-[120px]   h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  br rounded-full border-2 border-slate-200" src="./images/img1.png" alt="logo"></div>
