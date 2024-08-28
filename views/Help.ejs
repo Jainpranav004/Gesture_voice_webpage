@@ -18,7 +18,11 @@
     .home_font{
       font-family: 'Inika', sans-serif;
       font-size: large;
-    }       
+    }   
+    .filter{
+            @apply filter;
+            filter:invert(1);
+           }    
     *{
       box-sizing: border-box;
     }       
@@ -26,11 +30,11 @@
     <title>Gesture Voices</title>
 </head>
 <body>
-    <header class="  flex justify-around lg:justify-evenly py-5  mx-auto">
+    <header class="  flex justify-around lg:justify-evenly py-5  mx-auto bg-[#194147]">
        <div class="bo flex justify-between space-x-0 xl:space-x-20 md:space-x-10 w-auto">
          <img class=" w-[120px] h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  br rounded-full" src="./images/img1.png" alt="logo">
-         <img class=" w-[98px] h-[78px] lg:w-[118px] lg:h-[98px] my-auto hidden lg:block" src="./images/hand_1.jpeg" alt="">
-         <img class=" w-[87px] h-[148px] my-auto hidden lg:block" src="./images/hand_2.jpeg" alt="">
+         <img class=" w-[98px] h-[78px] lg:w-[118px] lg:h-[98px] my-auto hidden lg:block filter" src="./images/hand_1-c.png" alt="">
+         <img class=" w-[87px] h-[148px] my-auto hidden lg:block filter" src="./images/hand_2-c.png" alt="">
          
          </div>
          <div class=" w-[70%] sm:w-[70%] lg:w-[50%] 2xl:w-[60%] relative items-start">
@@ -40,7 +44,7 @@
 
            </ul>
 
-           <div class="w-20 ml-[70%] mb-[-2]"> <h1 class=" home_font text-3xl underline text-yellow-600 hover:text-yellow-800 font-bold" > <a href="/home"> Home </a> </h1> </div>
+           <div class="w-20 ml-[70%] mb-[-2]"> <h1 class=" home_font text-3xl underline text-[#008080] hover:text-teal-800 font-bold" > <a href="/home"> Home </a> </h1> </div>
          </nav>
                  <!-- //hamburger -->
                  <div id="hambg">
