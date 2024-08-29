@@ -48,4 +48,7 @@ app.get('/tutorials',(req,res,next)=>{
     res.render('tutorial.ejs',{url:req.protocol+"://"+req.headers.host})
     next()
 })
+app.get('/opportunity',(req,res,next)=>{
+    res.render('empowerment.ejs',{url:req.protocol+"://"+req.headers.host})
+})
 module.exports=app; 
