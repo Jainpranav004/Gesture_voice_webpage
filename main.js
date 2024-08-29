@@ -51,4 +51,10 @@ app.get('/tutorials',(req,res,next)=>{
 app.get('/opportunity',(req,res,next)=>{
     res.render('empowerment.ejs',{url:req.protocol+"://"+req.headers.host})
 })
+app.get('/community',(req,res,next)=>{
+    // const logo="public/images/img1.png";
+    res.render('community.ejs',{url:req.protocol+"://"+req.headers.host})
+    next()
+})
+
 module.exports=app; 
