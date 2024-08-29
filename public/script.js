@@ -5,3 +5,14 @@ console.log(nav)
 hamburger.addEventListener('click',()=>{
     nav.classList.toggle('hidden')
 })
+
+
+
+
+function scrollToFooter() {
+    // Get the footer element
+    const footer = document.getElementById('footer');
+    
+    // Scroll to the footer element
+    footer.scrollIntoView({ behavior: 'smooth' });
+  }

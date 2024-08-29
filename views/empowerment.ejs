@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>empowerment page</title>
+    <link rel="stylesheet" href="<%=url%>/src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
 
 <head>
   <meta charset="UTF-8">
@@ -11,7 +22,168 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .bg-col {
+    @apply background-color;
+    background-color: #f3f5f5;
+  }
+
+  .bg-body {
+    @apply background-color;
+    background-color: #007e7e;
+  }
+
+
+  .fm {
+    @apply font-family;
+    font-family: 'Inika', serif;
+
+  }
+
+  .ts {
+    @apply font-size;
+    font-size: 80px;
+  }
+
+  .br {
+    @apply border-radius;
+    border-radius: 7%;
+  }
+  .hover-white {
+  @apply text-white;
+}
+
+.hover-white:hover {
+  color: black;
+}
+</style>
+
+<body class="bg-body">
+  <div class=" bg-col text-[#008080] fm underline font-bold text-4xl text-end colr py-2 pr-[4%] cursor-pointer">
+    <a class="my-auto hover:text-gray-400" href="/home">Home</a>
+  </div>
+  <header class="  flex items-center justify-center ">
+    <div class=" flex justify-between space-x-0 xl:space-x-20 md:space-x-10 w-auto my-5">
+      <img class="border-4 border-black w-[100px] h-[100px] sm:w-[120px] sm:h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  rounded-full"
+        src="./images/img1.png" alt="logo">
+    </div>
+    <h1 class=" w-[70%] text-center text-3xl sm:text-5xl lg:text-7xl font-serif font-bold text-white">Empowerment Zone</h1>
+  </header>
+  <section class=" flex flex-col items-center my-10 space-y-10 ">
+    <div class=" text-center  w-[80%]">
+      <p class="mb-10 text-wrap text-2xl md:text-4xl fm font-normal leading-snug text-white">The Indian government reserves 4% of government
+        jobs for persons with disabilities, including those
+        who are deaf and mute The Indian government supports students with hearing impairments through
+        scholarships like the National Scholarship for Persons with Disabilities and job opportunities with
+        reserved positions and skill development programs. These efforts aim to enhance educational and
+        career prospects for individuals with hearing impairments.</p>
+    </div>
+    <div class="shadow-lg rounded-3xl block xl:flex flex-wrap pt-5 pb-10 justify-evenly w-[78.5%] bg-white ">
+      <div class=" justify-center items-center mx-auto xl:mx-0 w-[85%] space-x-5 xl:space-x-0 xl:w-[280px] flex xl:block">
+        <img class="w-[80px] h-[80px]  sm:w-[100px] sm:h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px]" src="./images/oppo1.jpg" alt="">
+        <p class=" text-wrap  text-2xl sm:text-3xl fm font-normal leading-snug">Check out these government scholarships to support
+          your education. </p>
+      </div>
+      <div class=" mx-auto mt-10 xl:mt-0 xl:mx-0 w-[85%] xl:w-[70%]">
+        <h1 class="fm font-bold text-4xl md:text-5xl lg:text-6xl">Scholarships for Students</h1>
+        <ul class=" my-10 space-y-10">
+          <li><a class="fm hover-white text-blue-500 font-normal text-2xl md:text-4xl underline" href="https://www.india.gov.in/scheme-national-scholarships-persons-disabilities ">National Scholarship for Persons with
+              Disabilities</a></li>
+          <li><a class="fm hover-white text-blue-500 font-normal text-2xl md:text-4xl underline" href="https://www.theglobalscholarship.org/scholarships/nhfdc-scholarship-for-students-with-disabilities?source=main#:~:text=10%2C000%20per%20year.,Special%20considerations%20for%20certain%20disabilities.&text=Up%20to%20500%20awards%20are,level%20and%20type%20of%20course">NHFDC Scholarships</a></li>
+          <li><a class="fm hover-white text-blue-500 font-normal text-2xl md:text-4xl underline" href="https://www.aicte-india.org/schemes/students-development-schemes/Saksham/General-Instructions ">Scholarship for student with Disabilities by
+              AICTE</a></li>
+          <li><a class="fm hover-white text-blue-500 font-normal text-2xl md:text-4xl underline" href="https://www.vidyasaarathi.co.in/Vidyasaarathi/">The Vidyasaarthi Scholarship</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="shadow-lg  rounded-3xl flex flex-wrap pt-5 pb-10 justify-evenly w-[78.5%] bg-white">
+      <div class=" w-[85%] lg:w-[70%] space-y-10">
+        <h1 class="fm font-bold text-4xl md:text-6xl  flex lg:block ">Job Portals and Resources<img class="w-[70px] h-[70px] sm:w-[100px] sm:h-[100px]  md:w-[150px] md:h-[150px] block lg:hidden" src="./images/oppo2.jpg" alt=""></h1>
+        <p class="fm font-normal text-2xl sm:text-3xl">The Indian government offers job opportunities through reserved positions and
+          skill development programs to
+          support individuals with hearing impairments</p>
+        <ul class=" my-10 space-y-10">
+          <li><a class="fm hover-white font-normal text-blue-500 text-2xl sm:text-3xl underline" href="https://www.enableindia.org/">Enable India</a></li>
+          <li><a class="fm hover-white font-normal text-blue-500 text-2xl sm:text-3xl underline" href="https://library.daisyindia.org/welcomeLink.action">Sugamya pustakalaya</a></li>
+        </ul>
+      </div>
+
+      <div class="hidden lg:block  w-[200px]">
+        <img class="w-[200px] h-[200px]" src="./images/oppo2.jpg" alt="">
+        <!-- <p class=" text-wrap text-3xl fm font-normal leading-snug">Check out these government scholarships to support your education. </p> -->
+      </div>
+    </div>
+
+
+    <div class="shadow-lg  rounded-3xl flex flex-wrap pt-5 pb-10 justify-evenly w-[78.5%] bg-white">
+      <div class=" px-2 sm:px-0 w-[85%] lg:w-[70%] space-y-10">
+        <h1 class="fm font-bold text-4xl md:text-6xl flex justify-between items-center lg:block">Events<img class="w-[70px] h-[70px] sm:w-[100px] sm:h-[100px]  md:w-[150px] md:h-[150px] block lg:hidden" src="./images/oppo3.jpg" alt=""></h1>
+        <ol class=" my-10 space-y-10 list-decimal font-bold text-2xl">
+          <li>
+            <p class="fm font-normal text-2xl sm:text-3xl"><b>Disability Awareness Programs: </b>These programs aim to raise
+              awareness about the needs and rights of individuals with hearing impairments.</p>
+          </li>
+          <li>
+            <p class="fm font-normal text-2xl sm:text-3xl"><b>Job Fairs for Persons with Disabilities: </b>Special job fairs are
+              held to connect job seekers with employers offering inclusive opportunities.</p>
+          </li>
+          <li>
+            <p class="fm font-normal text-2xl sm:text-3xl"><b>Educational Workshops and Seminars: </b> These events focus on
+              improving educational access and resources for students with hearing impairments.</p>
+          </li>
+          <li>
+            <p class="fm font-normal text-2xl sm:text-3xl"><b>Skill Development Camps: </b>Workshops and training sessions are
+              organized to enhance skills and employability for individuals with hearing impairments.</p>
+          </li>
+        </ol>
+      </div>
+
+
+      <div class=" w-[200px]">
+        <img class="hidden lg:block w-[200px] h-[200px]" src="./images/oppo3.jpg" alt="">
+        <!-- <p class=" text-wrap text-3xl fm font-normal leading-snug">Check out these government scholarships to support your education. </p> -->
+      </div>
+    </div>
+  </section>
+
+
+  <section class="colr h-auto flex flex-wrap justify-between lg:justify-evenly py-10 border border-black">
+    <div class=" md:mx-auto p-4 sm:w-[260px] lg:w-[300px] xl:w-[350px] flex flex-col items-start space-y-3 font-serif">
+      <h2 class="font-bold text-white text-lg sm:text-xl mr-[25%]">CONTACT US :</h2>
+      <div class="flex space-x-5">
+        <ul class="list none space-y-5 h-[150px] pt-1 md:pt-4">
+          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/fb.png" alt=""></li>
+          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/insta.png" alt=""></li>
+          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/linkedin.png" alt=""></li>
+        </ul>
+      <img class=" w-[120px] h-[120px] sm:w-[150px] sm:h-[150px]  lg:w-[200px] lg:h-[200px]  rounded-full" src="./images/img1.png" alt="logo">
+    </div>
+    </div>
+    <div class="mx-0 sm:mx-auto p-4 w-[250px] md:w-[300px] xl:w-[350px] flex flex-col items-start justify-center space-y-5 text-lg md:text-xl text-gray-200 font-normal my-5 font-serif">
+      <p>Address - XJkfw3425#%r</p>
+      <p>Telephone - 987568568</p>
+      <p>Email - ISLT@gmail.com</p>
+    </div>
+    <div class="font-serif mx-auto w-[100%]  md:w-[80%] lg:w-[300px] xl:w-[350px] p-4">
+      <form class="space-y-5 flex flex-col items-end" action="" method="post">
+      <h2 class="font-bold text-white text-lg sm:text-xl w-[100%]">FEEDBACK :</h2>
+      <input class="rounded-lg block p-2 w-[100%]" type="email"  placeholder="Email">
+        <textarea rows=4 class="w-[100%] resize-none rounded-lg px-2 border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50" placeholder="Review"></textarea>
+        <div class="flex items-center w-full">
+            <button type="submit" class=" bg-yellow-600 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Submit
+            </button>
+        </div>
+      </form>
+    </div>
+</section>
 
 </body>
 
