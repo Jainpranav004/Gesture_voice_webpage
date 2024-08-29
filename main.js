@@ -1,3 +1,5 @@
+const connectDB=require('./connection.js')
+connectDB()
 const path=require('path')
 const express=require('express')
 const userroute=require('./authentication/user.js')

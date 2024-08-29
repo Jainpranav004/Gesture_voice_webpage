@@ -1,18 +1,12 @@
 const express=require('express')
 const router=express.Router()
+const mongoose = require('mongoose');
+const {loginUser,signup}=require('./../Controllers/authController.js')
 
-router.post('/signup',async(req,res,next)=>{
-    const {email,password}=req.body;
-    //check for this if correct
-    res.redirect('/home')
-})
+router.post('/signup',signup)
 
 
 
-router.post('/login',async(req,res,next)=>{
-    const {email,password}=req.body;
-    //check for this if correct
-    res.redirect('/home')
-})
+router.post('/login',loginUser)
 
 module.exports=router;

@@ -16,6 +16,10 @@
         padding: 0;
         box-sizing: border-box;
     }
+    /* Hide the default scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
     .colr{
       @apply background-color;
       background-color:#008080;
@@ -54,19 +58,19 @@
 </head>
 <body class="colr">
     <div class=" text-white text-end fm underline font-bold text-4xl font-serif  pt-4 pr-20 hover:text-gray-300 cursor-pointer mb-[2rem]"><a href="/home">Home</a></div>
-    <section class="border-2 border-white  br2  w-[78%] mx-auto h-auto flex justify-center py-10 relative flex-wrap px-10 bg-[#194147]">
+    <section class="border-2 border-white  br2  w-[78%] mx-auto h-auto flex justify-center py-10 relative flex-wrap px-10 colr">
       <img src="./images/img1.png" class="absolute w-[150px] h-[150px] top-[-6%] left-[-8%] specfic-size:w-[300px] specfic-size:h-[300px] specfic-size:top-[42%] specfic-size:left-[24%]  2xl:w-[320px] 2xl:h-[320px] 2xl:top-[41%] 2xl:left-[25%] rounded-full" alt="">
       <div class=" text-white font-bold text-5xl fri w-[450px] py-10 text-center leading-snug mb-10"><p>"Where Gestures Speak and Voices Connect"</p></div>
-      <div class=" justify-center bg-white w-[600px] h-[100%] flex flex-col items-center br1 lg:br py-20">
+      <div class=" justify-center bg-white w-[600px] h-[100%] flex flex-col items-center rounded-3xl sm:br1 lg:br py-20">
         <h1 class="text-2xl lg:text-3xl font-bold text-gray-800 mb-8">Log in</h1>
 
         <div class=" flex space-x-4 mb-0 lg:mb-8 flex-wrap justify-center">
             <button class="  bg-white mb-8 hover:bg-gray-100 text-gray-500 font-semibold pop py-2 px-4 rounded-lg border border-gray-500">
-                <img src="./images/google.png" class="inline-block w-4 h-4 mr-2" alt="">
+                <img src="./images/google.png" class="inline-block w-3 h-3 sm:w-4 sm:h-4 mr-2" alt="">
                 Sign in with google  
             </button>
             <button class="bg-white mb-8 hover:bg-gray-100 text-gray-500 pop font-semibold py-2 px-4 rounded-lg border border-gray-500">
-                <img src="./images/fb.png" class="inline-block w-4 h-4 mr-2" alt="">
+                <img src="./images/fb.png" class="inline-block w-3 h-3 sm:w-4 sm:h-4 mr-2" alt="">
                 Sign in with Facebook
             </button>
         </div>

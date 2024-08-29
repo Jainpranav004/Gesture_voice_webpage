@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
    <link rel="stylesheet" href="<%=url%>/src/output.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,14 +15,19 @@
              color: #C39B3A;
    
            }
+           .filter{
+            @apply filter;
+            filter:invert(1);
+           }  
+           .bg-col{
+            @apply background-color;
+            background-color: #194147;
+           }
     .home_font{
       font-family: 'Inika', sans-serif;
       font-size: large;
     }   
-    .filter{
-            @apply filter;
-            filter:invert(1);
-           }    
+      
     *{
       box-sizing: border-box;
     }       
@@ -30,21 +35,21 @@
     <title>Gesture Voices</title>
 </head>
 <body>
-    <header class="  flex justify-around lg:justify-evenly py-5  mx-auto bg-[#194147]">
-       <div class="bo flex justify-between space-x-0 xl:space-x-20 md:space-x-10 w-auto">
-         <img class=" w-[120px] h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  br rounded-full" src="./images/img1.png" alt="logo">
+    <header class="  flex justify-around lg:justify-evenly py-5  mx-auto bg-col">
+       <div class="bg-col flex justify-between space-x-0 xl:space-x-20 md:space-x-10 w-auto">
+         <img class=" w-[120px] h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  rounded-full br" src="./images/img1.png" alt="logo">
          <img class=" w-[98px] h-[78px] lg:w-[118px] lg:h-[98px] my-auto hidden lg:block filter" src="./images/hand_1-c.png" alt="">
          <img class=" w-[87px] h-[148px] my-auto hidden lg:block filter" src="./images/hand_2-c.png" alt="">
          
          </div>
          <div class=" w-[70%] sm:w-[70%] lg:w-[50%] 2xl:w-[60%] relative items-start">
-         <nav class="  absolute right-0 md:static mr-0 w-[40%] md:w-[500px] mx-auto text-xl my-auto bg-gray-200 shadow-xl rounded-lg md:shadow-none md:bg-white md:rounded-none hidden md:block">
+         <nav class=" bg-col absolute right-0 md:static mr-0 w-[40%] md:w-[500px] mx-auto text-xl my-auto  shadow-xl rounded-lg md:shadow-none md:bg-col md:rounded-none hidden md:block">
            <ul class="  space-y-3 md:space-y-0 md:flex md:flex-row md:flex-wrap justify-between lg:justify-around  lg:space-x-2 xl:space-x-5 space-x-0 font-bold font-mono p-2">
            </ul>
 
            </ul>
 
-           <div class="w-20 ml-[70%] mb-[-2]"> <h1 class=" home_font text-3xl underline text-[#008080] hover:text-teal-800 font-bold" > <a href="/home"> Home </a> </h1> </div>
+           <div class="w-20 ml-[70%] mb-[-2]"> <h1 class=" home_font text-3xl  underline  text-white hover:text-teal-800 font-bold" > <a href="/home"> Home </a> </h1> </div>
          </nav>
                  <!-- //hamburger -->
                  <div id="hambg">
