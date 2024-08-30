@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link rel="stylesheet" href="<%=url%>/src/output.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
+  <title>modulo</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+  .fm {
+    @apply font-family;
+    font-family: 'Inika', serif;
+  }
+
+  .fm1 {
+    @apply font-family;
+    font-family: 'Inria', serif;
+  }
+
+  .bg-col {
+    @apply background-color;
+    background-color: #007e7e;
+  }
+
+  .comment-colr {
+    @apply background-color;
+    background-color: #d9d9d9;
+  }
+
+  .br {
+    @apply border-radius;
+    border-radius: 20%;
+  }
+  .filter-custom {
+  filter: invert(21%) sepia(63%) saturate(2198%) hue-rotate(151deg) brightness(90%) contrast(87%);
+}
+/* ol li::marker{
+  font-weight: 400;
+  color:#026161;
+  font-size:30px;
+} */
+</style>
+
+<body>
+  <div class="  text-end colr py-2 pr-[4%] cursor-pointer">
+    <a class="my-auto fm text-black text-4xl hover:text-gray-400 underline font-bold" href="/home">Home</a>
+  </div>
+  <header class="bg-col py-5  flex flex-wrap items-center justify-evenly w-[100%] mx-auto space-x-5 px-10">
+    <div class=" flex justify-between space-x-0 xl:space-x-20 md:space-x-10 w-auto my-5">
+      <img
+        class="border-2 border-black w-[100px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[150px] lg:h-[150px]  xl:w-[200px] xl:h-[200px]  rounded-full"
+        src="./images/img1.png" alt="logo">
+    </div>
+    <div class=" p-2 space-y-5 ">
+      <h1 class=" text-center text-wrap text-3xl md:text-4xl  lg:text-5xl xl:text-6xl fm font-bold text-white">Hand Sign Language
+        Tutorial</h1>
+      <h1 class=" text-center text-3xl text-wrap md:text-4xl  lg:text-5xl xl:text-6xl fm font-bold text-white">Module 1 : Basic ISL
+        Gestures</h1>
+    </div>
+  </header>
+
+  <section class=" w-[100%] mx-auto my-10 flex flex-wrap justify-evenly items-center  px-10 py-10 space-x-0 md:space-x-30">
+
+    <img class=" w-[100%] md:w-[325px] h-[275px] sm:h-[325px] specfic-size-2:w-[400px] specfic-size-2:h-[400px] lg:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[600px] object-cover" src="./images/modulo.jpeg" alt="">
+
+    <div class=" w-[100%] md:w-[35%] space-y-5">
+      <div class="space-y-2 lg:space-y-5">
+        <h1 class="fm font-bold text-2xl md:text-3xl  lg:text-4xl">Practice:</h1>
+        <div class=" comment-colr rounded-2xl"><textarea name="Translation-area"
+            class=" mb-0 resize-none focus:outline-none comment-colr p-4 rounded-2xl w-[100%] h-[150px] specfic-size-2:h-[180px] lg:h-[250px] xl:h-[350px]"
+            placeholder="Enter your view...."></textarea></div>
+      </div>
+      <div class="space-y-2 lg:space-y-5">
+        <h1 class="fm font-bold text-2xl md:text-3xl  lg:text-4xl">Accuracy:</h1>
+        <div class=" comment-colr rounded-2xl"><textarea name="Translation-area"
+            class=" mb-0 resize-none focus:outline-none comment-colr p-4 rounded-2xl w-[100%] h-[80px] specfic-size-2:h-[100px]"
+            placeholder="Enter your view...."></textarea></div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class=" w-[100%] mx-auto  py-5 px-[10%] my-10 ">
+    <h1 class="fm font-bold text-3xl md:text-6xl">Recommadation:</h1>
+    <ol class=" w-[100%] h-[500px] space-y-20 box-border mt-10 overflow-auto p-5 rounded-2xl border border-black">
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >1.  First <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >2.  Second <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >3.  Third <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >4.  Fourth <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+    </ol>
+  </section>
+
+  <section id="footer" class="bg-col h-auto flex flex-wrap  justify-between lg:justify-evenly py-10">
+    <div class=" md:mx-auto p-4 sm:w-[260px] lg:w-[300px] xl:w-[350px] flex flex-col items-start space-y-3 fm">
+      <h2 class="font-bold text-white text-lg sm:text-xl mr-[25%]">CONTACT US :</h2>
+      <div class="flex space-x-5">
+        <ul class="list none space-y-5 h-[150px] pt-1 md:pt-4">
+          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/fb.png" alt=""></li>
+          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/insta.png" alt=""></li>
+          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/linkedin.png" alt=""></li>
+        </ul>
+      <img class=" w-[120px] h-[120px] sm:w-[150px] sm:h-[150px]  lg:w-[200px] lg:h-[200px]  rounded-full" src="./images/img1.png" alt="logo">
+    </div>
+    </div>
+    <div class=" mx-0 sm:mx-auto p-4  w-[250px] md:w-[300px] xl:w-[350px] flex flex-col items-start justify-center space-y-5 text-wrap text-md sm:text-lg  md:text-xl text-gray-200 font-normal my-5 fm">
+      <p>Address - Abc, Xyz</p>
+      <p>Telephone - 987568568</p>
+      <p class="text-wrap">Email - GestureVoices@gmail.com</p>
+    </div>
+    <div class="fm mx-auto w-[100%]  md:w-[80%] lg:w-[300px] xl:w-[350px] p-4">
+      <form class="space-y-5 flex flex-col items-end" action="" method="post">
+      <h2 class="font-bold text-white text-lg sm:text-xl w-[100%]">FEEDBACK :</h2>
+      <input class="rounded-lg block p-2 w-[100%]" type="email"  placeholder="Email">
+        <textarea rows=4 class="w-[100%] resize-none rounded-lg px-2 border border-gray-300 focus:outline-none focus:ring focus:ring-blue-500 focus:ring-opacity-50" placeholder="Review"></textarea>
+        <div class="flex items-center w-full">
+            <button type="submit" class=" bg-yellow-600 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Submit
+            </button>
+        </div>
+      </form>
+    </div>
+</section>
+</body>
+
+</html>

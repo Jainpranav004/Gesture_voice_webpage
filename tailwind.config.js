@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       screens:{
-        'specfic-size':'1453px'
+        'specfic-size':'1453px',
+        'specfic-size-2':'850px',
       },
     },
   },
