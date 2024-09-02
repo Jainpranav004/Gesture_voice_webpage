@@ -14,9 +14,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique:true,
-        minLength:{
-            value: 8,
-        }
+        minLength:[8,"password must be 8 character long"]
     },
     createdAt: {
         type: Date,
@@ -24,5 +22,5 @@ const UserSchema = new mongoose.Schema({
     },
 });
 
-const User = mongoose.model('User', UserSchema);
+const User = mongoose.model('user', UserSchema);
 module.exports = User;
