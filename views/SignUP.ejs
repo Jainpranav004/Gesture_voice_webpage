@@ -81,25 +81,24 @@
         <div class="text-gray-600 text-center mb-6">- OR -</div>
 
         <form  action="/user/signup" method="post" class="w-[50%]">
-            <div class="mb-4">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="full_name">
                     Full name
                 </label>
-                <input class=" border-none shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="full_name" type="text" placeholder="Enter your full name">
-            </div>
+                <input required class=" border-none shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="fullName" type="text" placeholder="Enter your full name">
+            <!-- </div> -->
 
-            <div class="mb-4">
+            <!-- <div class="mb-4"> -->
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
                     Email Address
                 </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your email">
-            </div>
+                <input required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="email" type="email" placeholder="Enter your email">
+            <!-- </div> -->
 
             <div class="mb-6">
                 <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
                     Password
                 </label>
-                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Enter your password">
+                <input required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="password" type="password" placeholder="Enter your password">
             </div>
 
             <div class="flex items-center justify-between border ">
@@ -112,5 +111,6 @@
         <p class="text-gray-600 text-center">Already have an account? <a href="/login" class="underline text-blue-500">Login</a></p>
     </div>
     </section>
+    <script src=""></script>
 </body>
 </html>

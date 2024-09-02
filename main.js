@@ -1,3 +1,4 @@
+const {restrictedToLoginUser,checkAuth}=require('./middlewares/middles.js');
 const connectDB=require('./connection.js')
 connectDB()
 const path=require('path')
@@ -7,7 +8,10 @@ const app=express()
 const ejs=require('ejs')
 app.use(express.json())
 app.use(express.static(path.join(__dirname,'public')))
+// app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.set('view engine','ejs')
+app.set('views',path.resolve('./views'))
 app.use('/user',userroute)
 
 
@@ -56,5 +60,7 @@ app.get('/community',(req,res,next)=>{
     res.render('community.ejs',{url:req.protocol+"://"+req.headers.host})
     next()
 })
-
+app.get('/modulo',(req,res,next)=>{
+    res.render('modulo.ejs',{url:req.protocol+"://"+req.headers.host})
+})
 module.exports=app; 
