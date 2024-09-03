@@ -60,7 +60,7 @@ app.get('/community',(req,res,next)=>{
     res.render('community.ejs',{url:req.protocol+"://"+req.headers.host})
     next()
 })
-app.get('/modulo',(req,res,next)=>{
+app.get('/module',(req,res,next)=>{
     res.render('modulo.ejs',{url:req.protocol+"://"+req.headers.host})
 })
 module.exports=app; 
