@@ -8,9 +8,111 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
-    <title>Gesture Voices</title>
+   <link rel="icon" type="image/png" href="./images/img1.png">
+
+   <style>
+    .wrc{
+             @apply color;
+             color: #C39B3A;
+   
+           }
+           .filter{
+            @apply filter;
+            filter:invert(1);
+           }  
+           .bg-col{
+            @apply background-color;
+            background-color: #194147;
+           }
+
+      body{
+        background-color: white;
+      }     
+      .ab{
+        @apply background-color;
+        background-color: #008080;
+
+      }
+   </style>
+     <title>Gesture Voices: Bridging Communication with Sign Language Translation</title>
 </head>
 <body>
-    <h1> About Us Page  </h1>
+    <header class="  flex justify-around lg:justify-evenly py-5  mx-auto bg-col ">
+        <div class="bg-col flex justify-between space-x-0 xl:space-x-20 md:space-x-10 w-auto">
+          <img class=" w-[120px] h-[120px] md:w-[150px] md:h-[150px]  lg:w-[200px] lg:h-[200px]  rounded-full br" src="./images/img1.png" alt="logo">
+          <img class=" w-[98px] h-[78px] lg:w-[118px] lg:h-[98px] my-auto hidden lg:block filter" src="./images/hand_1-c.png" alt="">
+          <img class=" w-[87px] h-[148px] my-auto hidden lg:block filter" src="./images/hand_2-c.png" alt="">
+          
+          </div>
+          <div class=" w-[70%] sm:w-[70%] lg:w-[50%] 2xl:w-[60%] relative items-start">
+          <nav class=" bg-col absolute right-0 md:static mr-0 w-[40%] md:w-[500px] mx-auto text-xl my-auto  shadow-xl rounded-lg md:shadow-none md:bg-col md:rounded-none hidden md:block">
+            <ul class="  space-y-3 md:space-y-0 md:flex md:flex-row md:flex-wrap justify-between lg:justify-around  lg:space-x-2 xl:space-x-5 space-x-0 font-bold font-mono p-2">
+            </ul>
+ 
+            </ul>
+ 
+            <div class="w-20 ml-[70%] mb-[-2]"> <h1 class=" home_font text-5xl underline  text-white hover:text-teal-800 font-bold" style="font-size: 1.5rem;" > <a href="/home"> Home </a> </h1> </div>
+          </nav>
+                  <!-- //hamburger -->
+                  <div id="hambg">
+                    <img src="./images/hamburger.png"  class="hover:bg-gray-200 rounded-lg cursor-pointer h-12 block md:hidden absolute top-4 right-6" alt="">
+                  </div>
+      <div class="font-bold xl:text-4xl w-[400px] text-wrap mx-auto text-center wrc relative top-8 left-[4%] lg:left-[5%] lg:top-12 text-6xl hidden md:block ml-[50%] pt-0"  style="padding-bottom: 2rem; ">
+       “Where Gestures Speak and Voices Connect”
+      </div>
+      </div>
+    </header>
+
+    <div class="flex justify-center h-auto py-10 ">
+        <div class="w-[80%] pt-10 mx-auto p-4 bg-white rounded-3xl shadow-md ab" >
+          <div class="flex justify-between items-center"> 
+                <img src="./images/Alphe_techies.png" alt="" class="mr-4 ml-0 rounded-2xl">
+                <h1 class=" w-[60%] text-5xl font-bold mb-4 underline text-white" style="color: #C39B3A;" >About Us</h1>
+         </div>
+          <h1 class="text-2xl  mb-4 text-white" style="color: #C39B3A;" >We,the <b style="text-decoration: underline;">Alpha Techies</b> presents <b style="text-decoration: underline;"> Gesture Voices: Bridging Communication with Sign Language Translation  </b></h1>
+          
+          <div class="mb-4 border border-white text-white py-5 my-5 font-serif rounded-3xl" style="overflow: auto;" >
+                <p class="text-2xl leading-relaxed">
+                <b> Bridging the Gap </b>: Empowering the Deaf Community
+          
+                  At Gesture Talk, we're dedicated to breaking down communication barriers and creating a more inclusive world for the deaf and hard-of-hearing community. Our mission is to empower individuals through technology by providing a comprehensive platform for real-time Indian Sign Language (ISL) translation, education, and community support.
+                  <br><br>
+                  <b>Our Solution </b>:
+                  
+                  Real-time ISL Translation: Our innovative platform accurately converts ISL into text and speech in multiple Indian languages, enabling seamless communication between the deaf and hearing communities.
+                  Interactive Learning: We offer interactive modules for learning ISL, empowering individuals to improve their language skills and enhance their independence.
+                  Community Connection: Our platform fosters a supportive community where deaf individuals can connect, share experiences, and find resources.
+                  Educational Resources: We provide valuable information on government scholarships, job opportunities, and upcoming events relevant to the deaf community.
+                <br><br>
+                <b> Our Impact </b>:
+                  
+                  By bridging the communication gap, providing accessible education, and fostering community, we aim to:
+                  
+                  Enhance the quality of life for deaf individuals.
+                  Promote social inclusion and equality.
+                  Empower the deaf community to achieve their full potential.
+                  Join us in making a difference and creating a world where everyone can communicate effectively.
+                </p>
+          </div>
+          <div class="flex justify-center items-center">
+            <h1 class="text-5xl font-bold mb-4 underline " style="color: #C39B3A;">Our Workflow</h1>
+          </div>
+          <div class="mb-4 border border-white text-white py-5 font-serif rounded-3xl" style="overflow: auto;">
+            
+              <p class="text-2xl leading-relaxed">
+                <b> Data Collection </b>: Created a diverse dataset of Indian Sign Language signs and gestures.
+                <br>
+                <b>  Data Preprocessing </b>: Preparation of data using OpenCV and MediaPipe for training.
+                  <br>
+                <b> Model Training </b>: Train a deep learning model (e.g., convolutional neural network) using TensorFlow.
+                  <br>
+                <b> Model Deployment </b>: Deploy the trained model on a server.
+                  <br>
+                  We've created a highly user-friendly website using HTML, Tailwind CSS, JavaScript, Node.js, MongoDb and Express.js. 
+                  Making it easy and fun learning for users from modules.
+              </p>
+          </div>
+        </div>
+      </div>
 </body>
 </html>
