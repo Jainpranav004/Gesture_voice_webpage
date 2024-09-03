@@ -62,7 +62,7 @@
   <header class="bg-col py-5  flex flex-wrap items-center justify-evenly w-[100%] mx-auto space-x-5 px-10">
     <div class=" flex justify-between space-x-0 xl:space-x-20 md:space-x-10 w-auto my-5">
       <img
-        class="border-2 border-black w-[100px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[150px] lg:h-[150px]  xl:w-[200px] xl:h-[200px]  rounded-full"
+       id="main-img" class="border-2 border-black w-[100px] h-[100px] md:w-[120px] md:h-[120px] lg:w-[150px] lg:h-[150px]  xl:w-[200px] xl:h-[200px]  rounded-full"
         src="./images/img1.png" alt="logo">
     </div>
     <div class=" p-2 space-y-5 ">
@@ -96,11 +96,33 @@
 
   <section class=" w-[100%] mx-auto  py-5 px-[10%] my-10 ">
     <h1 class="fm font-bold text-3xl md:text-6xl">Recommadation:</h1>
-    <ol class=" w-[100%] h-[500px] space-y-20 box-border mt-10 overflow-auto p-5 rounded-2xl border border-black">
-      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >1.  First <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
-      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >2.  Second <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
-      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >3.  Third <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
-      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >4.  Fourth <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+    <ol class=" w-[100%] h-[500px] space-y-20 box-border mt-10 overflow-auto p-5 rounded-2xl border border-black" id="button-container">
+      <li data-img="./Modelsimg/a.png" class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >1.  Alphabet -  A <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >2.  Alphabet -  B  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >3.  Alphabet -  C <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >4.  Alphabet -  D  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >5.  Alphabet -  E <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >6.  Alphabet -  F  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >7.  Alphabet -  G <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >8.  Alphabet -  H  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >9.  Alphabet -  I <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >10.  Alphabet -  J  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >11.  Alphabet -  K <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >12.  Alphabet -  L  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >13.  Alphabet -  M <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >14.  Alphabet -  N  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >15.  Alphabet -  O <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >16.  Alphabet -  P  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >17.  Alphabet -  Q <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >18.  Alphabet -  R  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >19.  Alphabet -  S <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >20.  Alphabet -  T  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >21.  Alphabet -  U <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >22.  Alphabet -  V  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >23.  Alphabet -  W <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >24.  Alphabet -  X  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >25.  Alphabet -  Y <img src="./images/play.png" class="filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
+      <li class="bg-[#74bfbf] w-[100%] px-3 py-5 fm font-normal text-xl md:text-2xl flex justify-between" >26.  Alphabet -  Z  <img src="./images/play.png" class=" filter-custom w-6 h-6 relative right-5 top-0" alt=""></li>
     </ol>
   </section>
 
@@ -134,6 +156,7 @@
       </form>
     </div>
 </section>
+<script src="script3.js"></script>
 </body>
 
 </html>
