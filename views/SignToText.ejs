@@ -16,9 +16,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-
 </head>
+
 <style>
+  /* Original CSS remains unchanged */
+
   * {
     margin: 0;
     padding: 0;
@@ -30,35 +32,8 @@
     display: none;
   }
 
-  /* Show a custom scrollbar */
-  /* Customize the scrollbar as desired */
-  /* ::-webkit-scrollbar {
-  width: 10px;
-} */
-
-  /* Customize the scrollbar thumb */
-  /* ::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  border-radius: 10px;
-} */
-
-  /* Customize the scrollbar track */
-  /* ::-webkit-scrollbar-track {
-  background-color: #f0f0f0;
-} */
-
-  /* Optional: Add a hover effect to the scrollbar thumb */
-  /* ::-webkit-scrollbar-thumb:hover {
-  background-color: #999;
-} */
-
-  /* Optional: Add a click effect to the scrollbar thumb */
-  /* ::-webkit-scrollbar-thumb:active {
-  background-color: #666;
-} */
   .shadow-nav {
     box-shadow: 0 4px 8px rgba(255, 0, 0, 0.1);
-
   }
 
   .bgc {
@@ -93,60 +68,61 @@
 </style>
 
 <body class="">
-  <!-- <div class=" text-white text-end fm underline font-bold text-4xl colr py-2 pr-10 hover:text-gray-200 cursor-pointer mb-[2rem]"><a href="/home">HOME</a></div> -->
+  <!-- Original HTML remains unchanged -->
 
-  <div class="shadow-nav sm:shadow-none rounded-lg text-[#008080]  hidden  px-4 sm:px-0 absolute right-2 top-1 z-10 sm:z-0 bg-white sm:bg-transparent sm:relative  sm:flex flex-row ml-0 justify-end items-center space-y-2 shadow-xl sm:space-y-0 space-x-0 sm:space-x-5 lg:space-x-10  text-end fm w-[200px] sm:w-[100%]  text-xl md:text-3xl  py-8  cursor-pointer  font-serif ">
-
-    <div class="underline text-start  hover:text-gray-300 text-2xl"> <a href="/opportunity">Opportunity</a></div>
-    <div class="underline  text-start  hover:text-gray-300 text-2xl"> <a href="#bottom">Contact</a></div>
-    <div class="underline  text-start hover:text-gray-300 text-2xl"> <a href="/aboutus">About</a></div>
-    <div class="underline  text-start hover:text-gray-300 text-2xl"> <a href="/home">Home</a></div>
-  </div>
-  <div id="hambg" class=" px-3 py-3 mr-0 border border-black z-20 flex justify-end sm:hidden">
-    <img src="./images/hamburger.png" class="z-20 h-12 rounded-lg cursor-pointer  " alt="">
+  <div class="shadow-nav sm:shadow-none rounded-lg text-[#008080] hidden px-4 sm:px-0 absolute right-2 top-1 z-10 sm:z-0 bg-white sm:bg-transparent sm:relative sm:flex flex-row ml-0 justify-end items-center space-y-2 shadow-xl sm:space-y-0 space-x-0 sm:space-x-5 lg:space-x-10 text-end fm w-[200px] sm:w-[100%] text-xl md:text-3xl py-8 cursor-pointer font-serif ">
+    <div class="underline text-start hover:text-gray-300 text-2xl"> <a href="/opportunity">Opportunity</a></div>
+    <div class="underline text-start hover:text-gray-300 text-2xl"> <a href="#bottom">Contact</a></div>
+    <div class="underline text-start hover:text-gray-300 text-2xl"> <a href="/aboutus">About</a></div>
+    <div class="underline text-start hover:text-gray-300 text-2xl"> <a href="/home">Home</a></div>
   </div>
 
+  <div id="hambg" class="px-3 py-3 mr-0 border border-black z-20 flex justify-end sm:hidden">
+    <img src="./images/hamburger.png" class="z-20 h-12 rounded-lg cursor-pointer" alt="">
+  </div>
 
-
-
-  <section class=" w-[100%] mx-auto pb-20 mb-4">
-    <div class=" w-[100%] h-auto py-10 flex flex-wrap items-center justify-evenly colr mx-auto">
+  <section class="w-[100%] mx-auto pb-20 mb-4">
+    <div class="w-[100%] h-auto py-10 flex flex-wrap items-center justify-evenly colr mx-auto">
       <img src="./images/img1.png"
-        class="border-2 border-white rounded-full object-cover  w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[200px] lg:h-[200px]"
+        class="border-2 border-white rounded-full object-cover w-[150px] h-[150px] md:w-[200px] md:h-[200px] lg:w-[200px] lg:h-[200px]"
         alt="">
-      <div class=" w-[60%]  text-center ">
-        <p class="text-4xl  lg:text-6xl 2xl:text-7xl font-serif font-medium text-wrap text-white leading-snug ">
+      <div class="w-[60%] text-center ">
+        <p class="text-4xl lg:text-6xl 2xl:text-7xl font-serif font-medium text-wrap text-white leading-snug">
           Sign-to-Text/ Voice Converter</p>
       </div>
     </div>
-    <div class=" w-[100%] mx-auto mt-10"><img src="./images/video_img.jpeg"
-        class="rounded-lg shadow-xl mx-auto w-[86.5%] object-cover min-h-[200px]  max-h-[660px]" alt=""></div>
-    <div class=" mt-10 px-[6.5%]">
+
+    <!-- Webcam video -->
+    <div class="w-[100%] mx-auto mt-10">
+      <video id="webcam" autoplay playsinline class="rounded-lg shadow-xl mx-auto w-[86.5%] object-cover min-h-[200px] max-h-[660px]"></video>
+    </div>
+
+    <div class="mt-10 px-[6.5%]">
       <p class="fri font-bold text-3xl md:text-6xl">Translation:</p>
-      <div
-        class="rounded-tl-lg rounded-tr-lg flex fri font-normal  text-2xl sm:text-4xl justify-between px-4 mt-5 py-2 comment-colr">
-        <p>English</p>
-        <p>Voice</p>
-      </div>
-      <div class=" comment-colr rounded-bl-lg rounded-br-lg"><textarea name="Translation-area"
+      <div class="comment-colr rounded-bl-lg rounded-br-lg">
+        <textarea name="Translation-area"
           class="mb-0 resize-none focus:outline-none comment-colr p-4 w-[100%] h-[250px]"
-          placeholder="Enter your view...." id=""></textarea></div>
+          placeholder="Detected text will appear here..." id=""></textarea>
+      </div>
+      
+      <div class="comment-colr rounded-bl-lg rounded-br-lg">
+        <textarea name="Translation-area"
+          class="mb-0 resize-none focus:outline-none comment-colr p-4 w-[100%] h-[250px]"
+          placeholder="Enter your view...." id=""></textarea>
+      </div>
     </div>
   </section>
 
-
-
-
   <section class="colr h-auto flex flex-wrap justify-between lg:justify-evenly py-10 border border-black">
-    <div class=" md:mx-auto p-4 sm:w-[260px] lg:w-[300px] xl:w-[350px] flex flex-col items-start space-y-3 font-serif">
+    <div class="md:mx-auto p-4 sm:w-[260px] lg:w-[300px] xl:w-[350px] flex flex-col items-start space-y-3 font-serif">
       <h2 class="font-bold text-white text-lg sm:text-xl mr-[25%]">CONTACT US :</h2>
       <div class="flex space-x-5">
         <ul class="list none space-y-5 h-[150px] pt-1 md:pt-4">
-          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/fb.png" alt=""></li>
-          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/insta.png" alt=""></li>
-          <li><img class="w-6 h-6  sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/linkedin.png" alt=""></li>
+          <li><img class="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/fb.png" alt=""></li>
+          <li><img class="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/insta.png" alt=""></li>
+          <li><img class="w-6 h-6 sm:w-8 sm:h-8 lg:w-10 lg:h-10" src="./images/linkedin.png" alt=""></li>
         </ul>
-        <img class=" w-[120px] h-[120px] sm:w-[150px] sm:h-[150px]  lg:w-[200px] lg:h-[200px]  rounded-full"
+        <img class="w-[120px] h-[120px] sm:w-[150px] sm:h-[150px] lg:w-[200px] lg:h-[200px] rounded-full"
           src="./images/img1.png" alt="logo">
       </div>
     </div>
@@ -156,7 +132,7 @@
       <p>Telephone - 987568568</p>
       <p>Email - ISLT@gmail.com</p>
     </div>
-    <div class="font-serif mx-auto w-[100%]  md:w-[80%] lg:w-[300px] xl:w-[350px] p-4">
+    <div class="font-serif mx-auto w-[100%] md:w-[80%] lg:w-[300px] xl:w-[350px] p-4">
       <form class="space-y-5 flex flex-col items-end" action="" method="post">
         <h2 class="font-bold text-white text-lg sm:text-xl w-[100%]">FEEDBACK :</h2>
         <input class="rounded-lg block p-2 w-[100%]" type="email" placeholder="Email">
@@ -165,14 +141,68 @@
           placeholder="Review"></textarea>
         <div class="flex items-center w-full">
           <button type="submit"
-            class=" bg-yellow-600 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            class="bg-yellow-600 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
             Submit
           </button>
         </div>
       </form>
     </div>
   </section>
+
+  <!-- JavaScript remains unchanged -->
   <script src="./script1.js"></script>
+  <script>
+    // Accessing the webcam video element
+    const webcamVideo = document.getElementById('webcam');
+
+    // Check for getUserMedia support
+    if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+      navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function (stream) {
+          // Link the stream to the video element
+          webcamVideo.srcObject = stream;
+        })
+        .catch(function (error) {
+          console.error("Error accessing webcam: ", error);
+        });
+    }
+
+    // Function to send video stream to the Python API
+    async function sendVideoStreamToAPI() {
+      const canvas = document.createElement('canvas');
+      canvas.width = webcamVideo.videoWidth;
+      canvas.height = webcamVideo.videoHeight;
+
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(webcamVideo, 0, 0, canvas.width, canvas.height);
+
+      const blob = await new Promise((resolve) => canvas.toBlob(resolve, 'image/jpeg'));
+
+      const formData = new FormData();
+      formData.append('file', blob, 'frame.jpg');
+
+      try {
+        const response = await fetch('http://127.0.0.1:8000/upload', {
+          method: 'POST',
+          body: formData
+        });
+
+        if (response.ok) {
+          const result = await response.json();
+          console.log("Server response:", result);
+          // Display detected text
+          document.querySelector('[name="Translation-area"]').value = result.detected_text;
+        } else {
+          console.error("Server responded with error:", response.status);
+        }
+      } catch (error) {
+        console.error("Error sending video stream to API:", error);
+      }
+    }
+
+    // Set interval to send video frames to the API every second
+    setInterval(sendVideoStreamToAPI, 1000);
+  </script>
 </body>
 
 </html>
